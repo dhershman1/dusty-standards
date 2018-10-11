@@ -78,3 +78,31 @@ const foo = x => {
   return 'nope'
 }
 ```
+
+- Keep `if` blocks to 3 branches
+  - Tweak as needed (3 is pretty strict to some)
+```js
+// Bad
+const foo = list => {
+  if (!list.length) {
+    return false
+  }
+
+  for (let i = 0; i < list.length; i++) {
+    if (list[i] > 4) {
+      return list[i]
+    }
+  }
+
+  return list
+}
+
+// Good
+const foo = list => {
+  if (!list.length) {
+    return false
+  }
+
+  return list.find(x => x > 4)
+}
+```
