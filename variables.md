@@ -123,7 +123,7 @@ const cat = new Animal()
 foo = foo
 ```
 
-- _Avoid_ comparing a variable to itslef
+- _Avoid_ comparing a variable to itself
   - Except for checks like `+0 === -0` and `NaN`
 ```js
 if (foo === foo) {...}
