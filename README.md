@@ -10,4 +10,4 @@ The idea behind JavaScript Standard Style is to have no "Bike shedding" no confi
 
 ## Content
 
-- [General](https://github.com/dhershman1/standards-and-guidelines/blob/master/general.md)
+- [General](https://github.com/dhershman1/dusty-standards/blob/master/general.md)
