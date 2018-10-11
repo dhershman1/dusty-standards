@@ -85,7 +85,7 @@ const x = 'foo'
 - **No** Whitespace allowed at the end of a line
 ```js
 // Bad
-const foo =  () => {} 
+const foo =  () => {}
 
 // Good
 const bar = () => {}
@@ -199,7 +199,7 @@ const foo = () => {
 const x = 2
 
 if (x > 1) {
-
+  // ...
 }
 
 const foo = () => {

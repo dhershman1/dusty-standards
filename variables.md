@@ -117,6 +117,7 @@ console.log(a) // Throws ReferenceError
 console.log(b) // 1
 console.log(c) // 1
 
+// Good
 (function foo() {
   let a = 1
   let b = a
