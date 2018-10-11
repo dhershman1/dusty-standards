@@ -1,9 +1,5 @@
 # General Rules
 
-These are pretty general all around rules.
-
-## Content
-
 - [Semicolons](#semicolons)
 - [Comments](#comments)
 - [Whitespace](#whitespace)
