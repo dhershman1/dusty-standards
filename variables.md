@@ -42,6 +42,23 @@ const foo = () => {
 }
 ```
 
+- **Avoid** global scoping variables
+```js
+// Bad
+// lib.js
+var x = 2
+
+// foo.js
+const bar = () => {
+  return x * 2
+}
+
+// Good
+const bar = x => {
+  return x * 2
+}
+```
+
 - **Use camelcase for variable names**
 ```js
 // Bad
@@ -110,4 +127,23 @@ foo = foo
   - Except for checks like `+0 === -0` and `NaN`
 ```js
 if (foo === foo) {...}
+```
+
+- **Don't** extend native objects
+```js
+// Bad
+Object.prototype.foo = 'bar'
+String.prototype.age = 22
+
+// Good
+// ... Just... Don't do it.
+```
+
+- **Don't augment built in prototypes**
+```js
+// Bad
+Object.prototype.hasOwnProperty = 'why tho'
+
+// Good
+// ... Again... Just like... Seriously don't do this
 ```
