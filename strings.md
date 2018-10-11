@@ -8,6 +8,7 @@ console.log("hello")
 
 // Good
 console.log('hello')
+console.log("It's true!")
 ```
 
 - **No** multiline strings
