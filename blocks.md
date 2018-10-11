@@ -79,7 +79,7 @@ const foo = x => {
 }
 ```
 
-- Keep `if` blocks to 3 branches
+- Keep logic branches to 3
   - Tweak as needed (3 is pretty strict to some)
 ```js
 // Bad
@@ -105,4 +105,38 @@ const foo = list => {
 
   return list.find(x => x > 4)
 }
+```
+
+- _Avoid_ `switch` statements
+  - As they're clunky and sometimes rather slow
+```js
+// Bad
+switch(foo) {
+  case 'bar':
+    x = 1
+    break
+  case 'baz':
+    x = 2
+    break
+  default:
+    x = 3
+    break
+}
+
+// Ok
+if (foo === 'bar') {
+  x = 1
+} else if (foo === 'baz') {
+  x = 2
+} else {
+  x = 3
+}
+
+// Good
+const obj = {
+  bar: 1,
+  baz: 2
+}
+
+obj[foo] || 3
 ```
