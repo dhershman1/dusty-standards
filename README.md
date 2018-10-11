@@ -2,7 +2,9 @@
 
 This little repo is based around documenting standards and guidelines. Since I am asked to write up documentation like this I figured it'd be nice to have a template hanging around I can make tweaks too based on who evers needs, or possibly for anyone to grab and implement themselves.
 
-Now the bulk of the documentation will flow nicely along with the [StandardJs](https://standardjs.com/) Setup theres linter plugins for most editors and build tools alike! see their site for more info.
+Now the bulk of the documentation will flow nicely along with the [StandardJs](https://standardjs.com/) setup. 
+
+There are linter plugins for most editors and you can probably find a plugin for any build tool too. You can start **[here](https://standardjs.com/index.html#are-there-text-editor-plugins)**
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
