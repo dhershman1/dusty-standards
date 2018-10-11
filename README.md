@@ -1,5 +1,7 @@
 # Dusty Standards
 
+The idea behind this Standards & Guidelines template is to provide rules for a easy to use, mutation free codebase.
+
 The bulk of the documentation will flow nicely along with the [StandardJs](https://standardjs.com/) setup.
 
 There are linter plugins for most editors and you can probably find a plugin for any build tool too. You can start **[here](https://standardjs.com/index.html#are-there-text-editor-plugins)**
