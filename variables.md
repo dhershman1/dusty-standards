@@ -1,7 +1,5 @@
 # Variables
 
-## Standards
-
 - _Never_ use `var`
 ```js
 // Bad
@@ -12,6 +10,19 @@ let x = 2
 
 // Good
 const x = 2
+```
+
+- _Try_ to use `const` over `let`
+```js
+// Bad
+let x = 2
+
+console.log(x)
+
+// Good
+const x = 2
+
+console.log(x)
 ```
 
 - **No unused variables**
@@ -99,19 +110,4 @@ foo = foo
   - Except for checks like `+0 === -0` and `NaN`
 ```js
 if (foo === foo) {...}
-```
-
-## Guidelines
-
-- _Try_ to use `const` over `let`
-```js
-// Bad
-let x = 2
-
-console.log(x)
-
-// Good
-const x = 2
-
-console.log(x)
 ```
