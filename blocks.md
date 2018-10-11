@@ -23,7 +23,7 @@ if (x === 1) {...}
 if (x !== 1) {...}
 ```
 
-- _Always_ use blocks for if and else statements
+- _Always_ use blocks for `if` and `else` statements
 ```js
 // Bad
 if (condition) // ...
