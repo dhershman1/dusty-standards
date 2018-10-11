@@ -155,9 +155,8 @@ const obj = {
 // Very Bad
 const original = { a: 1, b: 2 }
 const copy = Object.assign(original, { c: 3 }) // This mutates `original` ಠ_ಠ
-delete copy.a // So does this
 
-// Bad
+// Ok
 const original = { a: 1, b: 2 }
 const copy = Object.assign({}, original, { c: 3 }) // Copy => { a: 1, b: 2, c: 3 }
 
@@ -166,8 +165,14 @@ const original = { a: 1, b: 2 }
 const copy = { ...original, c: 3 } // Copy => { a: 1, b: 2, c: 3 }
 ```
 
+- **Don't** delete property names from objects
 - _Use_ Object rest operators to get a new object with certain properties omitted
 ```js
+// Very Bad
+const original = { a: 1, b: 2, c: 3 }
+delete original.a // This will also mutate by reference
+
+// Good
 const original = { a: 1, b: 2, c: 3 }
 const { a, ...noA } = original
 
