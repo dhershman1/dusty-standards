@@ -1,5 +1,8 @@
 # Strings
 
+- **Never use `eval()` on a string**
+  - It is generally frowned upon using `eval()` on anything since it opens up many security vulnerabilities
+
 - Use **single** quotes for strings
   - Except to avoid escaping if needed
 ```js
@@ -65,4 +68,14 @@ const foo = 'Hello, ${name}'
 
 // Good
 const foo = `Hello, ${name}`
+```
+
+- **Don't** unnecessarily escape characters in a string
+```js
+// Bad
+const foo = '\'this\' \i\s \"quoted\"'
+
+// Good
+const foo = '\'this\' is "quoted"'
+const foo = `my name is '${name}'`
 ```
