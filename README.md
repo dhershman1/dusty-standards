@@ -1,4 +1,4 @@
-# Standards and Guidelines
+# Dusty Standards
 
 This little repo is based around documenting standards and guidelines. Since I am asked to write up documentation like this I figured it'd be nice to have a template hanging around I can make tweaks too based on who evers needs, or possibly for anyone to grab and implement themselves.
 
