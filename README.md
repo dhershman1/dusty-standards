@@ -14,4 +14,5 @@ There are linter plugins for most editors and you can probably find a plugin for
 - [Variables](https://github.com/dhershman1/dusty-standards/blob/master/variables.md)
 - [Blocks](https://github.com/dhershman1/dusty-standards/blob/master/blocks.md)
 - [Strings](https://github.com/dhershman1/dusty-standards/blob/master/strings.md)
+- [Arrays](https://github.com/dhershman1/dusty-standards/blob/master/arrays.md)
 - [Objects](https://github.com/dhershman1/dusty-standards/blob/master/objects.md)
