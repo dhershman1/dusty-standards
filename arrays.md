@@ -21,10 +21,10 @@ const foo = [1, 2]
 - _Use_ Literal syntax for strings
 ```js
 // Bad
-const foo = new Array()
+const foo = new Array(1, 2, 3)
 
 // Good
-const foo = []
+const foo = [1, 2, 3]
 ```
 
 - _Use_ `.concat()` instead of `.push()` and direct assignment
