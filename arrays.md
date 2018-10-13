@@ -47,7 +47,7 @@ console.log(arr) // => []
 console.log(foo) // => ['abc']
 ```
 
-- Use `.slice()` or `...` spread to copy arrays
+- Use `.slice()`, `.concat()`, or `...` spread to copy arrays
 ```js
 const items = [1, 2, 3]
 
@@ -62,7 +62,8 @@ for (i; i < len; i += 1) {
 
 // Good
 const itemsCopy = [...items]
-const itemsCopy2 = items.slice()
+const itemsCopy2 = items.concat()
+const itemsCopy3 = items.slice()
 ```
 
 - _Use_ `Array.from` instead of `...` spread for mapping copied arrays
