@@ -87,6 +87,25 @@ const obj = {
 }
 ```
 
+- **Don't** Iterate over objects
+  - If you must iterate an object try to convert it to an iterable first
+```js
+const obj = { a: 1, b: 2, c: 3 }
+
+// Bad
+const result = {}
+
+for (let prop in obj) {
+  result[prop] = obj[prop] * 2
+}
+
+// Better
+const result = Object.keys(obj).reduce((acc, k) =>
+  Object.assign(acc, {
+    [k]: obj[k] * 2
+  }), {})
+```
+
 - _Use_ the object method shorthand
 ```js
 // Bad
