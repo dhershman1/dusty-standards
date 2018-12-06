@@ -15,7 +15,7 @@ const obj = {
 }
 ```
 
-- **Always** set a function to a const when using function expression
+- **Always** set a function to a `const` when using function expression
 ```js
 // Bad
 let foo = () => {}
