@@ -87,3 +87,51 @@ const arr = Array.prototype.slice.call(items)
 // Good
 const arr = Array.from(items)
 ```
+
+- **Avoid** Using `unshift` and `shift` methods
+  - Not only do they mutate but they're also very slow
+```js
+// Bad
+const data = [1, 2, 3]
+const first = data.shift()
+
+console.log(first) // => 1
+console.log(data) // => [2, 3]
+data.unshift(4, 5)
+console.log(data) // => [4, 5, 2, 3]
+
+// Good
+const data = [1, 2, 3]
+const [first] = data
+
+console.log(first) // => 1
+console.log(data) // => [1, 2, 3]
+const foo = [4, 5, ...data]
+
+console.log(foo) // => [4, 5, 1, 2, 3]
+console.log(data) // => [1, 2, 3]
+```
+
+- **Avoid** Using methods like `.push` and `.pop`
+  - These directly mutate the array
+```js
+// Bad
+const data = [1, 2, 3, 4, 5]
+const last = data.pop()
+
+console.log(data) // => [1, 2, 3, 4]
+console.log(last) // => 5
+data.push(6)
+console.log(data) // => [1, 2, 3, 4, 6]
+
+// Good
+const data = [1, 2, 3, 4, 5]
+const last = data[data.length - 1]
+
+console.log(data) // => [1, 2, 3, 4, 5]
+console.log(last) // => 5
+const newdata = data.concat(6)
+
+console.log(data) // => [1, 2, 3, 4, 5]
+console.log(newData) // => [1, 2, 3, 4, 5, 6]
+```
