@@ -38,18 +38,18 @@ const foo = {
   'kebab-case': 3
 }
 
-// Good
-const foo = {
-  fooBar: 1,
-  greatDiddleDoo: 2,
-  kebabCase: 3
-}
-
 // Ok
 const foo = {
   fooBar: 1,
   greatDiddlyDoo: 2,
   'kebab-case': 3
+}
+
+// Good
+const foo = {
+  fooBar: 1,
+  greatDiddleDoo: 2,
+  kebabCase: 3
 }
 ```
 
