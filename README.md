@@ -15,6 +15,7 @@ The idea behind this Standards & Guidelines template is to provide a starting po
 - [Objects](https://github.com/dhershman1/dusty-standards/blob/master/JavaScript/objects.md)
 - [Functions](https://github.com/dhershman1/dusty-standards/blob/master/JavaScript/functions.md)
 - [Looping](https://github.com/dhershman1/dusty-standards/blob/master/JavaScript/looping.md)
+- [Modules](https://github.com/dhershman1/dusty-standards/blob/master/JavaScript/modules.md)
 
 ### CSS
 
