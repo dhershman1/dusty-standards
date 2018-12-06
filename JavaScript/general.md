@@ -72,6 +72,14 @@ const foo = () => {
 }
 ```
 
+- _Leave_ a blank line at the end of the file
+ - > This will increase file readability and makes it easier to read git diffs
+```js
+const x = 'foo'
+const y = () => {}
+
+```
+
 - Do not use multiple spaces except for indentation
 ```js
 // Bad
