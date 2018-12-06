@@ -70,6 +70,16 @@ const foo = 'Hello, ${name}'
 const foo = `Hello, ${name}`
 ```
 
+- **Don't** use backticks for regular strings
+  - Template literals are built for templates, using them constantly with normal strings can cause performance problems
+```js
+// Bad
+const foo = `This is foobar`
+
+// Good
+const bar = 'This is foobar'
+```
+
 - **Don't** unnecessarily escape characters in a string
 ```js
 // Bad
