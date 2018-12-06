@@ -12,17 +12,6 @@ if (x === 0) {...}
 while (true) {...}
 ```
 
-- **Always** use `===` vs `==`
-```js
-// Bad
-if (x == 1) {...}
-if (x != 1) {...}
-
-// Good
-if (x === 1) {...}
-if (x !== 1) {...}
-```
-
 - _Always_ use blocks for `if` and `else` statements
 ```js
 // Bad
