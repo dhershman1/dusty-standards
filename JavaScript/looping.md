@@ -1,7 +1,7 @@
 # Looping
 
 - **Avoid** using `for` and `while` loops in favor of higher order functions
-  - There will be situations where a `for` or `while` may be unavoidable
+  - There will be situations where a `for` or `while` may be unavoidable and thats _ok_
 ```js
 const data = [1, 2, 3]
 let result = []

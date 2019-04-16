@@ -2,6 +2,7 @@
 
 - _Always_ use modules `import`/`export` over a non standard module system.
   - Modules are standardized and are here to stay, embrace it
+  - Unlike node, who is still having problems embracing it, you should use `require` within node still
 ```js
 // Bad
 const foo = require('foo')
@@ -67,6 +68,20 @@ import foo from 'foo'
 import bar from 'bar'
 
 foo.thing()
+```
+
+- Keep local modules below installed modules
+- Keep built in modules **above** both local and installed modules
+```js
+// Bad
+import foo from './foobar'
+import test from 'tape'
+import path from 'path'
+
+// Good
+import path from 'path'
+import test from 'tape'
+import foo from './foobar'
 ```
 
 - **Avoid** webpack loader syntax in module import statements

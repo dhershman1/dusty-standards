@@ -53,7 +53,7 @@ const foo = {
 }
 ```
 
-- _Use_ literal syntax for obejct creation
+- _Use_ literal syntax for object creation
 ```js
 // Bad
 const foo = new Object()
@@ -63,7 +63,7 @@ const foo = {}
 ```
 
 - _Use_ computed property names when creating objects with dynamic properties
-- _Avoid_ using unnecessary computed propert keys
+- _Avoid_ using unnecessary computed property keys
 ```js
 // Bad
 const k = 'bar'
@@ -119,7 +119,7 @@ const foo = {
 // Good
 const foo = {
   id: 500,
-  addId(value) {
+  addId (value) {
     return foo.id + value
   }
 }
@@ -175,7 +175,7 @@ const obj = {
 const original = { a: 1, b: 2 }
 const copy = Object.assign(original, { c: 3 }) // This mutates `original` ಠ_ಠ
 
-// Ok
+// Better
 const original = { a: 1, b: 2 }
 const copy = Object.assign({}, original, { c: 3 }) // Copy => { a: 1, b: 2, c: 3 }
 

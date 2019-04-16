@@ -108,7 +108,7 @@ function baz (a, b) {
 }
 ```
 
-- **Never** name a function `arguments`
+- **Never** name a function parameter `arguments`
   - This will take precedence over the `arguments` object provided in the function scope
 ```js
 // Bad

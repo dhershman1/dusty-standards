@@ -53,6 +53,7 @@ const foo = `Hello, ${name}`
 ```
 
 - _Avoid_ string concatenation when using `__dirname` and `__filename`
+  - This is more specific to `Node.js`
 ```js
 // Bad
 const pathTo = `${__dirname}/app.js`

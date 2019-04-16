@@ -13,7 +13,7 @@ const bool = Boolean(foo)
 const str = String(1)
 ```
 
-- **Avoid** using `parseInt` if possible prefet `Number`
+- **Avoid** using `parseInt` if possible prefer `Number`
   - While being able to take only the numbers from a string may be beneficial it can also be dangerous, parseInt is also unpredictable sometimes
 ```js
 // Bad

@@ -90,7 +90,7 @@ const foo = () => {
 ```js
 // Bad
 // lib.js
-var x = 2
+x = 2
 
 // foo.js
 const bar = () => {
@@ -141,7 +141,7 @@ const fooBar = 'foobar'
 
 - **Avoid modifying variables declared with `const`**
 ```js
-// Bad
+// Bad & Error
 const x = 2
 
 x = 3
@@ -174,7 +174,7 @@ foo = 'baz'
 
 - **No** reassigning read-only global variables
 ```js
-// Bad
+// Very Bad
 window = {}
 ```
 

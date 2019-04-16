@@ -4,7 +4,7 @@
 - [Comments](#comments)
 - [Whitespace](#whitespace)
 
-### Semicolons
+## Semicolons
 
 Let's get this out of the way first...
 
@@ -18,7 +18,7 @@ const foo = 'test'; // Bad
 const bar = 'test' // Good
 ```
 
-### Code Comments
+## Code Comments
 
 - **Use spaces inside comments**
 ```js
@@ -57,11 +57,10 @@ const bar = 'test' // Good
  */
 ```
 
-### Whitespace
+## Whitespace
 
 White space is always for some reason a key debate point for developers. So this may or may not be the last thing you read!
 
-- Files should end with a newline
 - **No tabs**
 - Use 2 **spaces** for indents
 ```js

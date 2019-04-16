@@ -97,7 +97,8 @@ const foo = list => {
 ```
 
 - _Avoid_ `switch` statements
-  - As they're clunky and sometimes rather slow
+  - ~~As they're clunky and sometimes rather slow~~
+  - Use judgment for these, use as needed
 ```js
 // Bad
 switch(foo) {
